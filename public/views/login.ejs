@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('partial/head')  %>
+  <link rel="stylesheet" href="/css/pageform.css">
+</head>
+
+<body>
+  <div class="container align-items-center w-50 mt-5">
+    <h1 class="mb-3 text-center">Login</h1>
+    <form action="/login" method="POST">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+        <div class="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+        <a class="nav-link" style="color: white;" href="/signup">Don't have an account? SIGN UP Here</a>
+      </div>
+
+      <% if (status === 'emailnotfound') { %>
+      <%- include('partial/email-not-found') %>
+      <% } else if (status === 'wrongpassword' ) { %>
+      <%- include('partial/wrong-password') %>
+
+      <% } %>
+
+      <button type="submit" class="btn btn-primary">LOGIN</button>
+    </form>
+  </div>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

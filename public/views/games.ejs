@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('partial/head')  %>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <section class="vh-100">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+          ROCK PAPER SCISSORS
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>player 1</h2>
+          <div class="item player" id="player-batu" value="ROCK">
+            <img src="images/batu.png" width="100" height="100" alt="batu">
+          </div>
+          <div class="item player" id="player-kertas" value="PAPER">
+            <img src="images/kertas.png" width="100" height="100" alt="kertas">
+          </div>
+          <div class="item player" id="player-gunting" value="SCISSORS">
+            <img src="images/gunting.png" width="100" height="100" alt="gunting">
+          </div>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+          <div id="result">
+            <h2 class="vs">vs</h2>
+          </div>
+        </div>
+        <div class="col text-center">
+          <h2>com</h2>
+          <div class="item" id="comp-batu" value="ROCK">
+            <img src="images/batu.png" width="100" height="100" alt="batu">
+          </div>
+          <div class="item" id="comp-kertas" value="PAPER">
+            <img src="images/kertas.png" width="100" height="100" alt="kertas">
+          </div>
+          <div class="item" id="comp-gunting" value="SCISSORS">
+            <img src="images/gunting.png" width="100" height="100" alt="gunting">
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="refresh-btn" id="reload">
+          <img src="images/refresh.png" width="60" height="60" alt="reload-btn">
+        </div>
+      </div>
+  </section>
+
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>

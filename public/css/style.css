@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+button {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+  background-image: url(/images/main-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: -4.8%;
+}
+
+.games {
+  background-image: url(/images/the-games-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.features {
+  background-image: url(/images/features.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-shadow {
+  background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 20%, #080a0b 120%);
+}
+
+.requirements {
+  background-image: url(/images/requirements.png);
+  background-position: center;
+  position: cover;
+}
+
+.top-scores {
+  background-image: url(/images/top-score-bg-2.png), url(/images/top-score-bg-1.png);
+  background-repeat: no-repeat, repeat;
+}
+
+.newsletter,
+.footer {
+  background-color: #080a0b;
+}
+
+.btn {
+  width: 260px;
+  height: 60px;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  border-radius: 4px;
+  color: #1a1917;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.btn-logout {
+  width: max-content;
+}
+.lead,
+th {
+  color: #ffb548;
+}
+
+td {
+  color: #fff;
+}
+
+.table {
+  width: 140%;
+}
+
+.table .border,
+th .border,
+td .border {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #1a1b1c;
+}
+
+.card-img-top {
+  position: relative;
+}
+
+.subscribe {
+  width: 260px;
+  height: 60.25px;
+}
+
+.form-control:valid {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: none;
+  width: 366.92px;
+  height: 60px;
+}
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffb548;
+}
+
+hr {
+  color: #fff;
+  opacity: 50%;
+}
+
+.footer .nav-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card-img-top {
+  box-shadow: 0.3rem 0.3rem #ffb548;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+.games-carousel {
+  margin-left: -5rem;
+  margin-right: 2rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(/images/next.svg);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/images/prev.svg);
+}
+
+.carousel-control-next-icon {
+  margin-right: -10rem;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -10rem;
+}
+
+.footer .navbar {
+  background: none;
+}
+
+@media (max-width: 575.98px) {
+  .jumbotron {
+    margin-top: -16%;
+  }
+  .games-carousel {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel-control-next-icon {
+    margin-right: 0;
+  }
+
+  .carousel-control-prev-icon {
+    margin-left: 0;
+  }
+}
+
+
+/* Games Style */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+body {
+  background-color: #9c835f;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+a,
+a:hover {
+  color: #f9b23d;
+}
+
+.item {
+  margin: 2.5rem 2.5rem;
+}
+
+.player:hover {
+  transform: scale(1.1);
+}
+
+.vs {
+  font-size: 100px;
+  color: #bd0000;
+}
